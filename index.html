@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMK Negeri 12 Kab.Tangerang - Center of Excellence Vocational High School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="img/logo-smkn12.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="https://smktelkom-mlg.sch.id/assets/frontend/css/responsive.css">
+    <link rel="stylesheet" href="https://smktelkom-mlg.sch.id/assets/frontend/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://smktelkom-mlg.sch.id/assets/frontend/css/calendar.css">
+    <link rel="stylesheet" href="https://smktelkom-mlg.sch.id/assets/frontend/css/kc.fab.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700&display=swap" rel="stylesheet"> 
+
+    <style>
+        .header {
+            width: 100%;
+            padding-bottom: 10px;
+            justify-content: space-between; 
+            align-items: center;
+            background: #ffffff;
+            transition: background-color 0.3s ease;
+            height: 65px;    
+            padding-bottom: 60px;    
+        }
+
+        .header__title img {
+            width: 45px;
+            margin-right: 10px;
+        }
+
+        .header__dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .header__dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .header__dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .header__dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        @media screen and (max-width: 1024px) {
+            #navbar {
+                background-color: #ffffff;
+                width: 100%;
+                margin-left: -2%;
+            }
+
+            #home .hero-text h2 {
+                font-size: 1.5em;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <!--Header-->
+    <header class="header">
+        <div class="container header__container">
+            <div class="header__logo">
+                <h1 class="header__title"><img src="img/logo-smkn12.png">SMK Negeri 12 Kab. Tangerang</h1>
+            </div>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+                aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <div class="header__menu">
+                <nav id="navbar" class="header__nav collapse">
+                    <ul class="header__elenco">
+                        <li class="header__el"><a href="#home" class="header__link">Home</a></li>
+                            <li class="header__el header__dropdown">
+                                <a href="#" class="header__link">Profil <i class="fas fa-caret-down"></i></a>
+                                <div class="header__dropdown-content">
+                                    <a href="page/sejarah.html">Sejarah singkat</a>
+                                    <a href="page/visi dan misi.html">Visi dan Misi</a>
+                                </div>
+                            </li>
+                            <li class="header__el header__dropdown">
+                                <a href="#pricing" class="header__link">Konsentrasi keahlian <i class="fas fa-caret-down"></i></a>
+                                <div class="header__dropdown-content">
+                                    <a href="page/Pemasaran.html">Bisnis daring dan pemasaran</a>
+                                    <a href="page/Rekayasa.html">Rekayasa perangkat lunak</a>
+                                    <a href="page/Motor.html">Teknik bisnis sepeda motor</a>
+                                    <a href="page/Listrik.html">Teknik instalasi tenaga listrik</a>
+                                    <a href="page/Bangunan.html">Desain permodelan informasi bengunan</a>
+                                </div>
+                            </li>
+                            <li class="header__el header__dropdown">
+                                <a href="#contact" class="header__link">Program <i class="fas fa-caret-down"></i></a>
+                                <div class="header__dropdown-content">
+                                    <a href="page/ekstrakurikuler.html">Ekstrakurikuler</a>
+                                    <a href="page/organisasi.html">Organisasi</a>
+                                </div>
+                            </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+
+    <!-- Home -->
+    <section id="home" class="pd-tp-100 hero" class="sect">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6 col-12 col-sm-12">
+                    <div class="hero-text">
+                        <h2 style="margin-bottom: 20px;">Welcome to<br> SMK Negeri 12 Kabupaten Tangerang.</h2>
+                        <hr class="garis-lurus" align="left">
+                        <p>Mengutamakan pendidikan berkualitas dengan konsep keunggulan dan berbasis semi militer di Kabupaten Tangerang.</p>
+                        <a href="#home" target="_blank" class="btn">Join Now</a>
+                    </div>
+                </div>
+    
+                <div class="col-md-6 col-lg-6 col-12 col-sm-12 text-right">
+                    <div class="lanangan">
+                        <img src="img/lanang_loro.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end home -->
+
+    <!-- About -->
+    <section id="why-choose-us" class="pd-bt-80 pd-tp-100 bg-light" class="sect" style="margin-top: -20%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto text-center" id="title">
+                    <h2 class="section_title">Kenapa harus dubesta?</h2>
+                    <hr class="garis-lurus" align="center">
+                    <p class="section_description">Alasan kenapa kalian semua harus bergabung dengan SMK Negeri 12 Kabupaten Tangerang.</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="icon">
+                            <i class="fas fa-laptop-code" style="background-color: rgb(182, 202, 240); border-radius: 5px; padding: 15px;"></i>
+                        </div>
+                        <h3 class="feature-title">Fasilitas lengkap</h3>
+                        <p class="feature-description">Penunjang belajar dengan kualitas premium.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="icon">
+                            <i class="fa fa-chalkboard-teacher" style="color: red; background-color: rgb(255, 198, 198); border-radius: 5px; padding: 15px;"></i>
+                        </div>
+                        <h3 class="feature-title">pengajar kompeten</h3>
+                        <p class="feature-description">Guru yang <i>up-to-date</i> dengan perkembangan industri.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <div class="icon">
+                            <i class="fa fa-building" style="color: purple; background-color: rgb(227, 168, 241); border-radius: 5px; padding: 15px;"></i>
+                        </div>
+                        <h3 class="feature-title">Kerjasama luas</h3>
+                        <p class="feature-description">Memperbesar kesempatan bekerja sebelum lulus.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end about -->
+
+    <!-- sambutan kepsek -->
+    <section id="welcome-note" class="pd-bt-100" class="sect">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 text-center" id="akrom">
+                    <figure>
+                        <img src="img/akrom.webp" alt="Kepala Sekolah" class="school-head-img" style="margin-top: -10%;">
+                        <figcaption><b>- M Akrom S.Pd, M.Pd</b></figcaption>
+                    </figure>
+                </div>
+                <div id="welcome">
+                    <div class="welcome-content">
+                        <h3 class="section-title">Sambutan</h3>
+                        <hr class="garis-lurus" align="left">
+                        <h1>Kepala sekolah</h1>
+                        <p class="section-description">Salam sejahtera bagi seluruh siswa, guru, dan staff SMK Negeri 12 Kabupaten Tangerang.
+                            Saya dengan bangga menyambut Anda semua ke sekolah kami, tempat yang didedikasikan untuk memberikan pendidikan berkualitas tinggi dengan lingkungan belajar yang kondusif. 
+                            <br><br>Di SMK Negeri 12, kami tidak hanya memberikan pengetahuan dan keterampilan, tetapi juga membentuk karakter yang kuat dan nilai-nilai yang baik. Kami menyediakan fasilitas lengkap dan pengajar yang berkualitas, serta berbagai kesempatan untuk pengembangan diri di luar kelas.
+                            Saya yakin bahwa dengan kerja keras, dedikasi, dan dukungan dari semua pihak, kita akan mencapai kesuksesan bersama.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> 
+    <!-- end sambutan kepsek -->
+    
+    <!-- Total siswa -->
+    <section id="total-students" class="pd-bt-100" class="sect">
+        <div class="container-1">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="section-heading">
+                        <h2 style="color: #ffffff;">Siswa kami lebih dari <b>1000+</b></h2>
+                        <p>Mayoritas siswa kami tidak hanya dari Tangerang, namun juga dari berbagai daerah.
+                            Semuanya berkesempatan bergabung dengan kami.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-cards-container">
+                <div class="skill-card">
+                  <i class="fas fa-laptop" style=" padding: 10px; color:  white; border-radius: 5px;"></i>
+                  <h4>RPL<br>342 siswa</h4>
+                </div>
+        
+                <div class="skill-card">
+                  <i class="fas fa-book" style=" padding: 10px; color: white ; border-radius: 5px;"></i>
+                  <h4>BDPM<br>342 siswa</h4>
+                </div>
+        
+                <div class="skill-card">
+                  <i class="fas fa-bolt" style=" padding: 10px; color: white; border-radius: 5px;"></i>
+                  <h4>TITL<br>228 siswa</h4>
+                </div>
+        
+                <div class="skill-card">
+                  <i class="fas fa-motorcycle" style=" padding: 10px; color: white; border-radius: 5px;"></i>
+                  <h4>TBSM<br>228 siswa</h3>
+                </div>
+        
+                <div class="skill-card">
+                  <i class="fas fa-building" style=" padding: 10px; color: white; border-radius: 5px;"></i>
+                  <h4>DPIB<br>228 siswa</h4>
+                </div>
+              </div>
+        </div>
+    </section>
+    <!-- end total siswa-->
+
+    <!-- Agenda sekolah -->
+    <section id="about-block-element" style="margin-top: 20px;">
+        <div class="row">
+            <div class="col-lg-6  bg-image-left" id="agenda">
+                <img src="img/kalender.jpg" alt="">
+            </div>
+            <div class="col-lg-6  bg-left" id="Agenda">
+                <div class="features-text" style="margin-top: 20%;">
+                    <h2 class="title-h2">Agenda Sekolah</h2>
+                    <p>Kegiatan SMK Negeri 12 Kabupaten Tangerang selama beberapa hari kedepan.</p>
+                    <p class="alert alert-info text-center">Tidak ada agenda mendatang!.</p>            
+                    <div class="icon-block ">
+                        <div class="bg-color-7 icon-block-img text-default">
+                            <i class="fa fa-list-ul"></i>
+                        </div>
+                        <div class="icon-block-info">
+                            <h3><a href="">Semua Agenda</a></h3>
+                            <p>Tampilkan semua agenda</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end Agenda sekolah -->
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="margin-bottom: -10px; margin-top: -13%;"><path fill="#333" fill-opacity="1" d="M0,224L80,234.7C160,245,320,267,480,256C640,245,800,203,960,192C1120,181,1280,203,1360,213.3L1440,224L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>About Us</h3>
+                    <p>Kami di SMK Negeri 12 Kabupaten Tangerang berkomitmen untuk memberikan pendidikan berkualitas kepada para siswa. Dengan staf pengajar yang berpengalaman dan kurikulum yang berorientasi pada kebutuhan industri, kami berusaha untuk membekali siswa dengan pengetahuan dan keterampilan yang relevan untuk masa depan mereka.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#why-choose-us">About</a></li>
+                        <li><a href="#welcome-note">Welcome</a></li>
+                        <li><a href="#total-students">Students</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Contact Us</h3>
+                    <p>Kp. Babakan Barat RT. 001/001, Kel. Babakan, Kec. Legok, Kab. Tangerang - Banten 15820</p>
+                    <p>Email: smkn12kabtangerangs@gmail.com</p>
+                    <p>Phone: Tlp. 021-295 06044</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center">© 2024 SMK Negeri 12 kab. Tangerang. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
